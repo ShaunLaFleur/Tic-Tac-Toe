@@ -59,7 +59,7 @@ function gameReset() {
   ];
   turn = "X";
   isGameOver = false;
-  $("#winner").html("");
+  $("#winner").html("&nbsp");
   $(".toe").each(function(){
     $(this).html("&nbsp");
   });
