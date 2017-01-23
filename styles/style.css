@@ -1,0 +1,37 @@
+body {
+  text-align:center;
+  font-size: 90px;
+  color:white;
+  background-color:black;
+}
+
+button {
+  color: white;
+  background-color: #295f94;
+  height: 25px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 15px;
+  color: #71b9ff;
+}
+
+.toe {
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  display: inline-block;
+  background-color: #295f94;
+  margin-right:-21.5px;
+}
