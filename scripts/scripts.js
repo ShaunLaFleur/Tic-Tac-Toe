@@ -1,11 +1,10 @@
-var toeBoard = [
-  ["", "", ""],
-  ["", "", ""],
-  ["", "", ""],
-];
-var turn = "X";
-var isGameOver = false;
-$("#turn").html(turn);
+$(document).ready(function(){
+  var toeBoard = [], 
+      turn, 
+      isGameOver,
+      totalMoves;
+  gameReset();
+});
 
 $("#reset").click(function(){
   gameReset();
@@ -15,12 +14,15 @@ $(".toe").click(function(){
  var r = $(this).data("row");
  var c = $(this).data("column");
  if(toeBoard[r][c] === "" && !isGameOver) {
+   totalMoves++;
    toeBoard[r][c] = turn;
    $(this).html(turn);
    if(isWinner(turn)) {
      $("#winner").html(turn+" is the winner of this round!");
      isGameOver = true;
      // call reset game function
+   } else if(!isGameOver && totalMoves === 9) {
+      $("#winner").html("The game was a draw!");
    } else {
      if(turn === "X") {
        turn = "O";
@@ -58,7 +60,9 @@ function gameReset() {
     ["", "", ""],
   ];
   turn = "X";
+  totalMoves = 0;
   isGameOver = false;
+  $("#turn").html(turn);
   $("#winner").html("&nbsp");
   $(".toe").each(function(){
     $(this).html("&nbsp");
