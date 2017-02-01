@@ -9,6 +9,7 @@ button {
   color: white;
   background-color: #295f94;
   height: 25px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -27,12 +28,27 @@ h3 {
   color: #71b9ff;
 }
 
+#One, #Two, #Four, #Five {
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+#Three, #Six {
+  border-bottom: 1px solid white;
+}
+
+#Seven, #Eight {
+  border-right: 1px solid white;
+}
+
 .toe {
   height: 100px;
   width: 100px;
-  border: 2px solid white;
-  display: inline-block;
+  float: left;
   background-color: #295f94;
-  margin-right:-21.5px;
   cursor: pointer;
+}
+
+#board {
+  display: inline-block;
 }

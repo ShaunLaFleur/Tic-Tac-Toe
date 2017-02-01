@@ -5,27 +5,29 @@
 	<script src="scripts/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-	<button id="reset">New Game</button>
+	
 	<h1>Tic-Tac-Toe</h1>
 	<h2>Turn: <span id="turn"></span></h2>
 	<h3 id="winner">&nbsp</h3>
-
-	<div id="row0">
-	  <div id="00" class="toe" data-row="0" data-column="0">&nbsp</div>
-	  <div id="01" class="toe" data-row="0" data-column="1">&nbsp</div>
-	  <div id="02" class="toe" data-row="0" data-column="2">&nbsp</div>
+	<div>
+		<button id="reset">New Game</button>
 	</div>
+	<div id="board">
+	  <div id="One" class="toe" data-row="0" data-column="0">&nbsp</div>
+	  <div id="Two" class="toe" data-row="0" data-column="1">&nbsp</div>
+	  <div id="Three" class="toe" data-row="0" data-column="2">&nbsp</div>
 
-	<div id="row1">
-	  <div id="10" class="toe" data-row="1" data-column="0">&nbsp</div>
-	  <div id="11" class="toe" data-row="1" data-column="1">&nbsp</div>
-	  <div id="12" class="toe" data-row="1" data-column="2">&nbsp</div>
-	</div>
+	  <div style="clear:left"></div>
 
-	<div id="row2">
-	  <div id="20" class="toe" data-row="2" data-column="0">&nbsp</div>
-	  <div id="21" class="toe" data-row="2" data-column="1">&nbsp</div>
-	  <div id="22" class="toe" data-row="2" data-column="2">&nbsp</div>
+	  <div id="Four" class="toe" data-row="1" data-column="0">&nbsp</div>
+	  <div id="Five" class="toe" data-row="1" data-column="1">&nbsp</div>
+	  <div id="Six" class="toe" data-row="1" data-column="2">&nbsp</div>
+
+	  <div style="clear:left"></div>
+
+	  <div id="Seven" class="toe" data-row="2" data-column="0">&nbsp</div>
+	  <div id="Eight" class="toe" data-row="2" data-column="1">&nbsp</div>
+	  <div id="Nine" class="toe" data-row="2" data-column="2">&nbsp</div>
 	</div>
 
 	<script src="scripts/scripts.js"></script>
